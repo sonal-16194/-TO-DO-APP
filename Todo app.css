@@ -1,0 +1,114 @@
+body {
+    margin:0;
+    padding:0;
+    display:flex;
+   justify-content: center;    
+}
+
+.main{
+    height:30rem;
+    width:40%;
+    background-color:rgb(63, 63, 180);
+    border-radius:0.5rem ;
+    margin-top:3rem;
+}
+.main h3 {
+    font-size: 3rem;
+    text-align: center;
+    color :white;
+    margin-top:1rem;       
+}
+.task {
+     height:5rem;
+     width:90%;  
+     margin-top: -1.5rem;    
+    margin-left:1.75rem;    
+    background-color:white;
+    border-radius:0.5rem ;
+    position:relative;
+}
+
+/* -----------------------input----------------------- */
+#input{
+    width: 80%;
+    background: transparent;
+    text-align: center;    
+    border:none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    margin-top:0.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;    
+}
+
+/* ---------------------------------add button--------------------------- */
+ .task button{
+    margin-top:0.5rem;
+    /* margin-left: 12rem; */
+    height:1.9rem;
+    background-color: rgb(238, 105, 43);
+    color:white;
+    border-radius: 50px;
+    border :1px solid gray; 
+    position: absolute;
+    top:1.8rem;
+    left: 12rem; 
+    align-items: center; 
+    cursor: pointer;
+ }
+ .container{
+     height:15rem;
+     width:90%;
+     background-color: white;
+     margin-left: 1.7rem;
+     border-radius: 10px;
+ }
+ ul li{
+     list-style:none;
+     font-size:1.2rem;
+     font-weight: 300;
+     padding:0.7rem 0.5rem 0.7rem 3.5rem;
+     user-select: none;
+     cursor: pointer;
+     position: relative;
+ }
+ ul li::before{
+     content: '';
+     position:absolute;
+     height:1.5rem;
+     width:1.5rem;
+     border-radius:50%;
+     background-image: url("images/unchecked.png");
+     background-size: cover;
+     background-position: center;
+     top:12px;
+     left:8px;
+ }
+ ul li.checked{
+     color:#555;
+     text-decoration: line-through;
+ }
+ ul li.checked::before{
+     background-image: url("images/checked.png");
+ }
+
+ /* -----------------------------delete button------------------------------ */
+ ul li .delete{     
+     background: transparent;
+     border:none;
+     font-size:1rem;
+     cursor: pointer;     
+     border:1px soild gray;
+     background-color: rgb(221, 88, 88);
+     border-radius: 50px;
+     width:80px;
+     height:25px;
+     position: absolute;
+    right:10px;     
+ }
+ ul li.delete:hover{
+     background-color: rgb(179, 29, 29);
+ }
+ 
+
+
